@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --lt-orange: hsl(20, 100%, 50%);
+  --pl-white: hsl(0, 0%, 100%);
+}
+
+.main{
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  padding-top: 70px;
+  background: linear-gradient(231deg, rgb(14, 12, 16) 0%, rgb(43, 38, 49) 50%, rgb(10, 5, 12) 100%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.add-btn{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px;
+  background-color: var(--lt-orange);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container{
+  height: 350px;
+  width: 300px;
+  border-radius: 5px;
+  /* border: 3px solid black; */
+  margin: 10px;
+}
+.tool{
+  height: 10%;
+  width: 100%;
+  outline: none;
+  padding-right: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--lt-orange);
+  display: flex;
+  justify-content: end;
+}
+.tool i{
+  margin: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.notes{
+  height: 90%;
+  width: 100%;
+}
+#note-text{
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1rem;
+  border: none;
+}
+
+#note-text:focus{
+  outline: none;
+}
